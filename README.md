@@ -15,30 +15,86 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
 <table style="width:100%">
   <tr>
     <th>Test id</th>
+    <th>Set-up</th>
     <th>Req/sec</th>
     <th>Ramp-up</th>
     <th>Client / sec</th>
-    <th>Errors</th>
+    <th>Fail/Sample(1)</th>
+    <th>Avg rps</th>
     <th>Duration</th>
-    <th>Function instances</th>
+    <th>Azure Function instances</th>
   </tr>
   <tr>
-    <td>15/04/2021 13:15:43 (Kevin)</td>
+    <td>15/04/2021 13:15:43 (K)</td>
+    <td>1</td>
     <td>0 to 10K rps</td>
     <td>2 mins</td>
-    <td>332</td>
+    <td>83</td>
     <td>1/1.7m</td>
+        <td></td>
     <td>3 min</td>
     <td>15</td>
 </tr>
   <tr>
-    <td>15/04/2021 12:45:44 (Kevin)</td>
+    <td>15/04/2021 12:45:44 (K)</td>
+    <td>1</td>
     <td>0 to 10K rps</td>
     <td>1 min</td>
     <td>166</td>
     <td>0/1.7m</td>
+            <td></td>
     <td>3 min</td>
     <td>15</td>
   </tr>
+    <tr>
+    <td>16/04/2021-17:15:13-(V)</td>
+    <td>2</td>
+    <td>0 to 10K rps</td>
+    <td>1 min</td>
+    <td>166</td>
+    <td>2/1.63m</td>
+            <td>8500</td>
+    <td>240 secs</td>
+    <td>?</td>
+  </tr>
 </table>
 
+(1) Fail/Sample = number of failed requests / sample. Request in unit and requests in millions.
+
+## Azure set-up
+
+- Config 1: Azure Function PlanEP3 - 840 ACU, 14GB Memory Dv2-Series. Plan Scale out: 100 instances max
+
+<table style="width:100%">
+  <tr>
+    <th>Config Id</th>
+    <th>AZD</th>
+    <th>BackEnds</th>
+    <th>AzF Size</th>
+    <th>AzF Max instances</th>
+    <th>AzEH Tier</th>
+    <th>AzEH Scale</th>
+    <th>AzEH Hub Partitions</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>No</td>
+    <td></td>
+    <td>EP3</td>
+    <td>100</td>
+    <td>Standard</td>
+    <td>20</td>
+    <td>32</td>
+</tr>
+  <tr>
+    <td>2</td>
+    <td>Yes</td>
+    <td>2</td>
+    <td>EP3</td>
+    <td>100</td>
+    <td>Standard</td>
+    <td>20</td>
+    <td>32</td>
+  </tr>
+
+</table>
