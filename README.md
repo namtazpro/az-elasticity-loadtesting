@@ -15,14 +15,14 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
 <table style="width:100%">
   <tr>
     <th>Test id</th>
-    <th>Set-up</th>
+    <th>Config</th>
     <th>Req/sec</th>
     <th>Ramp-up</th>
     <th>Client / sec</th>
     <th>Fail/Sample(1)</th>
     <th>Avg rps</th>
     <th>Duration</th>
-    <th>Azure Function instances</th>
+    <th>AzFunc instances</th>
     <th>Test report<th>
   </tr>
   <tr>
@@ -65,7 +65,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
 
 (1) Fail/Sample = number of failed requests / sample. Request in unit and requests in millions.
 
-## Azure set-up
+## Azure configuration
 
 EP3 = 840 ACU, 14GB Memory Dv2-Series.
 
