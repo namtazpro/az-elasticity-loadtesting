@@ -67,12 +67,12 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
 
 ## Azure set-up
 
-- Config 1: Azure Function PlanEP3 - 840 ACU, 14GB Memory Dv2-Series. Plan Scale out: 100 instances max
+EP3 = 840 ACU, 14GB Memory Dv2-Series.
 
 <table style="width:100%">
   <tr>
     <th>Config Id</th>
-    <th>AZD</th>
+    <th>Az FD</th>
     <th>BackEnds</th>
     <th>AzF Size</th>
     <th>AzF Max instances</th>
