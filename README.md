@@ -23,6 +23,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <th>Avg rps</th>
     <th>Duration</th>
     <th>Azure Function instances</th>
+    <th>Test report<th>
   </tr>
   <tr>
     <td>15/04/2021 13:15:43 (K)</td>
@@ -34,6 +35,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
         <td></td>
     <td>3 min</td>
     <td>15</td>
+    <td></td>
 </tr>
   <tr>
     <td>15/04/2021 12:45:44 (K)</td>
@@ -45,6 +47,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
             <td></td>
     <td>3 min</td>
     <td>15</td>
+    <td></td>
   </tr>
     <tr>
     <td>16/04/2021-17:15:13-(V)</td>
@@ -56,6 +59,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
             <td>8500</td>
     <td>240 secs</td>
     <td>?</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/16042021_171513_(V)/artifacts/dashboard/index.html">Report</a></td>
   </tr>
 </table>
 
@@ -79,7 +83,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
   <tr>
     <td>1</td>
     <td>No</td>
-    <td></td>
+    <td>n/a</td>
     <td>EP3</td>
     <td>100</td>
     <td>Standard</td>
