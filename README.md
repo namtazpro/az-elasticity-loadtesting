@@ -80,7 +80,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>20</td>
     <td>6.282559 million</td>
     <td>500 Virtual Users x 20 Medium Instances</td>
-    <td><a target="_blank" href="">Report</a></td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_075757/dashboard/index.html">Report</a></td>
   </tr>
   <tr>
     <td>23/04/2021 08:34:33</td>
@@ -94,7 +94,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>20</td>
     <td>6.293558 million</td>
     <td>500 Virtual Users x 20 Medium Instances</td>
-    <td><a target="_blank" href="">Report</a></td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_083433/dashboard/index.html">Report</a></td>
   </tr>
   <tr>
     <td>23/04/2021 09:54:49</td>
@@ -108,7 +108,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>16</td>
     <td>6.336730 million</td>
     <td>250 Virtual Users x 40 Medium Instances</td>
-    <td><a target="_blank" href="">Report</a></td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_095449/dashboard/index.html">Report</a></td>
   </tr>
   <tr>
     <td>23/04/2021 10:34:32</td>
@@ -122,7 +122,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>17</td>
     <td>6.346183 million</td>
     <td>250 Virtual Users x 40 Medium Instances</td>
-    <td><a target="_blank" href="">Report</a></td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_103432/dashboard/index.html">Report</a></td>
   </tr>
 </table>
 
