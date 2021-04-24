@@ -151,4 +151,345 @@ AzureMetrics<br>
 | summarize ['Total Messages'] = sum(Total)<br>
     </td>
   </tr>
+  <tr>
+    <td>24/04/2021 06:52:13</td>
+    <td>
+let min_t = datetime(2021-04-24 04:53:00Z);<br>
+let max_t = datetime(2021-04-24 05:08:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 04:53:00Z);<br>
+let max_t = datetime(2021-04-24 05:08:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 04:53:00Z);<br>
+let max_t = datetime(2021-04-24 05:08:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 07:23:46</td>
+    <td>
+let min_t = datetime(2021-04-24 05:25:00Z);<br>
+let max_t = datetime(2021-04-24 05:40:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 05:25:00Z);<br>
+let max_t = datetime(2021-04-24 05:40:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 05:25:00Z);<br>
+let max_t = datetime(2021-04-24 05:40:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 07:53:10</td>
+    <td>
+let min_t = datetime(2021-04-24 05:55:00Z);<br>
+let max_t = datetime(2021-04-24 06:10:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 05:55:00Z);<br>
+let max_t = datetime(2021-04-24 06:10:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 05:55:00Z);<br>
+let max_t = datetime(2021-04-24 06:10:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 09:01:05</td>
+    <td>
+let min_t = datetime(2021-04-24 07:08:00Z);<br>
+let max_t = datetime(2021-04-24 07:23:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 07:08:00Z);<br>
+let max_t = datetime(2021-04-24 07:23:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 07:08:00Z);<br>
+let max_t = datetime(2021-04-24 07:23:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 09:42:02</td>
+    <td>
+let min_t = datetime(2021-04-24 07:08:00Z);<br>
+let max_t = datetime(2021-04-24 07:23:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 07:08:00Z);<br>
+let max_t = datetime(2021-04-24 07:23:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 07:08:00Z);<br>
+let max_t = datetime(2021-04-24 07:23:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 10:20:49</td>
+    <td>
+let min_t = datetime(2021-04-24 08:22:00Z);<br>
+let max_t = datetime(2021-04-24 08:37:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 08:22:00Z);<br>
+let max_t = datetime(2021-04-24 08:37:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 08:22:00Z);<br>
+let max_t = datetime(2021-04-24 08:37:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 11:06:09</td>
+    <td>
+let min_t = datetime(2021-04-24 09:12:00Z);<br>
+let max_t = datetime(2021-04-24 09:27:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 09:12:00Z);<br>
+let max_t = datetime(2021-04-24 09:27:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 09:12:00Z);<br>
+let max_t = datetime(2021-04-24 09:27:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021, 13:15:14</td>
+    <td>
+let min_t = datetime(2021-04-24 11:17:00Z);<br>
+let max_t = datetime(2021-04-24 11:32:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 11:17:00Z);<br>
+let max_t = datetime(2021-04-24 11:32:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 11:17:00Z);<br>
+let max_t = datetime(2021-04-24 11:32:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 14:17:47</td>
+    <td>
+let min_t = datetime(2021-04-24 12:25:00Z);<br>
+let max_t = datetime(2021-04-24 12:40:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 12:25:00Z);<br>
+let max_t = datetime(2021-04-24 12:40:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 12:25:00Z);<br>
+let max_t = datetime(2021-04-24 12:40:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 15:20:49</td>
+    <td>
+let min_t = datetime(2021-04-24 13:22:00Z);<br>
+let max_t = datetime(2021-04-24 13:37:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 13:22:00Z);<br>
+let max_t = datetime(2021-04-24 13:37:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 13:22:00Z);<br>
+let max_t = datetime(2021-04-24 13:37:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
+  <tr>
+    <td>24/04/2021 16:22:25</td>
+    <td>
+let min_t = datetime(2021-04-24 14:29:00Z);<br>
+let max_t = datetime(2021-04-24 14:44:00Z);<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize Count_Function_App_Instances=dcount(cloud_RoleInstance) by bin(timestamp, 30s)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 14:29:00Z);<br>
+let max_t = datetime(2021-04-24 14:44:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+requests<br>
+| where timestamp between(min_t..max_t)<br>
+| summarize ['rate/second'] = sum(itemCount) / grainPerSecond by bin(timestamp, grainTime)<br>
+| render timechart<br>
+    </td>
+    <td>
+let min_t = datetime(2021-04-24 14:29:00Z);<br>
+let max_t = datetime(2021-04-24 14:44:00Z);<br>
+let grainTime = 1min;<br>
+let grainPerSecond = 1.0 * 60.0; // Rate per second<br>
+AzureMetrics<br>
+| where TimeGenerated between(min_t..max_t)<br>
+| where Resource == "FUNCEHTEHNS" and MetricName == "IncomingMessages"<br>
+| summarize ['Total Messages'] = sum(Total)<br>
+    </td>
+  </tr>
 </table>

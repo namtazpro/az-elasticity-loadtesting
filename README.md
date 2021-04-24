@@ -124,6 +124,160 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>250 Virtual Users x 40 Medium Instances</td>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_103432/dashboard/index.html">Report</a></td>
   </tr>
+  <tr>
+    <td>24/04/2021 06:52:13</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>50 sec</td>
+    <td>11 mins</td>
+    <td>200</td>
+    <td>1/6.343606 million</td>
+            <td>9535</td>
+    <td>13</td>
+    <td>6.343606 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_065214/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 07:23:46</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>50 sec</td>
+    <td>11 mins</td>
+    <td>200</td>
+    <td>0/6.357121 million</td>
+            <td>9555</td>
+    <td>17</td>
+    <td>6.357122 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_072346/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 07:53:10</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>40 sec</td>
+    <td>11 mins</td>
+    <td>250</td>
+    <td>0/6.364264 million</td>
+            <td>9567</td>
+    <td>16</td>
+    <td>6.364425 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_075310/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 09:01:05</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>40 sec</td>
+    <td>11 mins</td>
+    <td>250</td>
+    <td>0/6.406986 million</td>
+            <td>9633</td>
+    <td>13</td>
+    <td>6.406986 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_090105/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 09:42:02</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>30 sec</td>
+    <td>11 mins</td>
+    <td>333</td>
+    <td>0/6.448748 million</td>
+            <td>9693</td>
+    <td>14</td>
+    <td>6.448748 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_094202/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 10:20:49</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>30 sec</td>
+    <td>11 mins</td>
+    <td>333</td>
+    <td>0/6.442250 million</td>
+            <td>9683</td>
+    <td>20</td>
+    <td>6.442250 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_102049/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 11:06:09</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>20 sec</td>
+    <td>11 mins</td>
+    <td>500</td>
+    <td>0/6.497785 million</td>
+            <td>9769</td>
+    <td>15</td>
+    <td>6.497785 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_110609/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 13:15:14</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>20 sec</td>
+    <td>11 mins</td>
+    <td>500</td>
+    <td>0/6.468643 million</td>
+            <td>9721</td>
+    <td>12</td>
+    <td>6.468643 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_131514/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 14:17:47</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>10 sec</td>
+    <td>11 mins</td>
+    <td>1000</td>
+    <td>272/6.490735 million</td>
+            <td>9756</td>
+    <td>13</td>
+    <td>6.490463 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_141747/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 15:20:49</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>10 sec</td>
+    <td>11 mins</td>
+    <td>1000</td>
+    <td>0/6.479702 million</td>
+            <td>9742</td>
+    <td>13</td>
+    <td>6.479702 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_152049/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 16:22:25</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>10 sec</td>
+    <td>11 mins</td>
+    <td>1000</td>
+    <td>1/6.381744 million</td>
+            <td>9595</td>
+    <td>20</td>
+    <td>6.381743 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_162225/dashboard/index.html">Report</a></td>
+  </tr>
 </table>
 
 (1) Fail/Sample = number of failed requests / sample. Request in unit and requests in millions.
