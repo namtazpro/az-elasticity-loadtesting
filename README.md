@@ -278,6 +278,34 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>250 Virtual Users x 40 Medium Instances</td>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_162225/dashboard/index.html">Report</a></td>
   </tr>
+  <tr>
+    <td>24/04/2021 18:00:03</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>0 sec</td>
+    <td>11 mins</td>
+    <td>10000</td>
+    <td>1/6.376057 million</td>
+            <td>9578</td>
+    <td>17</td>
+    <td>5.776255 million (large discrepancy due to Azure Diagnostics missing a sample)</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_180003/dashboard/index.html">Report</a></td>
+  </tr>
+  <tr>
+    <td>24/04/2021 18:57:33</td>
+    <td>1</td>
+    <td>0 to 10K rps</td>
+    <td>0 sec</td>
+    <td>11 mins</td>
+    <td>10000</td>
+    <td>179/6.379544 million</td>
+            <td>9585</td>
+    <td>17</td>
+    <td>6.379365 million</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_185733/dashboard/index.html">Report</a></td>
+  </tr>
 </table>
 
 (1) Fail/Sample = number of failed requests / sample. Request in unit and requests in millions.
