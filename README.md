@@ -27,7 +27,7 @@ th, td {
     <th>Ramp-up</th>
     <th>Duration</th>
     <th>Client/sec</th>
-    <th>Fail/Sample(1)</th>
+    <th>- Sample<br>- Fail<br>- EH msgs</th>
     <th>Avg rps</th>
     <th>AzFunc instances</th>
     <th>EH Incoming Messages</th>
@@ -39,8 +39,8 @@ th, td {
     <td>1 min</td>
     <td>11 mins</td>
     <td>166</td>
-    <td>2/6.282561 million</td>
-            <td>8057</td>
+    <td>6.282561m<br>2<br>6.282559m</td>
+    <td>8057</td>
     <td>20</td>
     <td>6.282559 million</td>
     <td>500 Virtual Users x 20 Medium Instances</td>
