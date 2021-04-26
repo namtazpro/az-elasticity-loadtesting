@@ -21,13 +21,13 @@ th, td {
   padding: 5px;
 }
 </style>
-<table style="width:100%">
+<table style="width:100px">
   <tr>
     <th>Test id</th>
     <th>Ramp-up</th>
     <th>Duration</th>
     <th>Client/sec</th>
-    <th>- Sample<br>- Fail<br>- EH msgs</th>
+    <th align="left">- Sample<br>- Fail<br>- EH msgs</th>
     <th>Avg rps</th>
     <th>AzFunc instances</th>
     <th>EH Incoming Messages</th>
