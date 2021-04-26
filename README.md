@@ -24,7 +24,6 @@ th, td {
 <table style="width:100%">
   <tr>
     <th>Test id</th>
-    <th>Config</th>
     <th>Ramp-up</th>
     <th>Duration</th>
     <th>Client/sec</th>
@@ -37,7 +36,7 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_075757/dashboard/index.html">23/04/2021 07:57:57</a></td>
-    <td>1</td>
+
     <td>1 min</td>
     <td>11 mins</td>
     <td>166</td>
@@ -49,7 +48,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_083433/dashboard/index.html">23/04/2021 08:34:33</a></td>
-    <td>1</td>
     <td>1 min</td>
     <td>11 mins</td>
     <td>166</td>
@@ -61,7 +59,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_095449/dashboard/index.html">23/04/2021 09:54:49</a></td>
-    <td>1</td>
     <td>1 min</td>
     <td>11 mins</td>
     <td>166</td>
@@ -73,7 +70,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_103432/dashboard/index.html">23/04/2021 10:34:32</a></td>
-    <td>1</td>
     <td>1 min</td>
     <td>11 mins</td>
     <td>166</td>
@@ -85,7 +81,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_065214/dashboard/index.html">24/04/2021 06:52:13</a></td>
-    <td>1</td>
     <td>50 sec</td>
     <td>11 mins</td>
     <td>200</td>
@@ -97,7 +92,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_072346/dashboard/index.html">24/04/2021 07:23:46</a></td>
-    <td>1</td>
     <td>50 sec</td>
     <td>11 mins</td>
     <td>200</td>
@@ -109,7 +103,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_075310/dashboard/index.html">24/04/2021 07:53:10</a></td>
-    <td>1</td>
     <td>40 sec</td>
     <td>11 mins</td>
     <td>250</td>
@@ -121,7 +114,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_090105/dashboard/index.html">24/04/2021 09:01:05</a></td>
-    <td>1</td>
     <td>40 sec</td>
     <td>11 mins</td>
     <td>250</td>
@@ -133,7 +125,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_094202/dashboard/index.html">24/04/2021 09:42:02</a></td>
-    <td>1</td>
     <td>30 sec</td>
     <td>11 mins</td>
     <td>333</td>
@@ -145,7 +136,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_102049/dashboard/index.html">24/04/2021 10:20:49</a></td>
-    <td>1</td>
     <td>30 sec</td>
     <td>11 mins</td>
     <td>333</td>
@@ -157,7 +147,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_110609/dashboard/index.html">24/04/2021 11:06:09</a></td>
-    <td>1</td>
     <td>20 sec</td>
     <td>11 mins</td>
     <td>500</td>
@@ -169,7 +158,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_131514/dashboard/index.html">24/04/2021 13:15:14</a></td>
-    <td>1</td>
     <td>20 sec</td>
     <td>11 mins</td>
     <td>500</td>
@@ -181,7 +169,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_141747/dashboard/index.html">24/04/2021 14:17:47</a></td>
-    <td>1</td>
     <td>10 sec</td>
     <td>11 mins</td>
     <td>1000</td>
@@ -193,7 +180,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_152049/dashboard/index.html">24/04/2021 15:20:49</a></td>
-    <td>1</td>
     <td>10 sec</td>
     <td>11 mins</td>
     <td>1000</td>
@@ -205,7 +191,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_162225/dashboard/index.html">24/04/2021 16:22:25</a></td>
-    <td>1</td>
     <td>10 sec</td>
     <td>11 mins</td>
     <td>1000</td>
@@ -217,7 +202,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_180003/dashboard/index.html">24/04/2021 18:00:03</a></td>
-    <td>1</td>
     <td>0 sec</td>
     <td>11 mins</td>
     <td>10000</td>
@@ -229,7 +213,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_185733/dashboard/index.html">24/04/2021 18:57:33</a></td>
-    <td>1</td>
     <td>0 sec</td>
     <td>11 mins</td>
     <td>10000</td>
