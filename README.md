@@ -36,7 +36,6 @@ th, td {
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_075757/dashboard/index.html">23/04/2021 07:57:57</a></td>
-
     <td>1 min</td>
     <td>11 mins</td>
     <td>166</td>
