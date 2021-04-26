@@ -21,9 +21,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <th align="left">- Sample<br>- Fail<br>- EH msgs</th>
     <th>Avg rps</th>
     <th>AzFunc instances</th>
-    <th>EH Incoming Messages</th>
     <th>Test Setup</th>
-    <th>Test report<th>
   </tr>
   <tr>
     <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_075757/dashboard/index.html">23/04/2021 07:57:57</a></td>
