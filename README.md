@@ -11,8 +11,37 @@ Tested scenario: scale from 0 to 10 000 http requests per second (10K rps)
 
 Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the number of new requests per second the Azure Function can receive. We try to capture the point at which the number of errors becomes un-acceptable on a usability point of view. Ramp-up over 2 mins, 1 min, 30 seconds, 20 seconds etc.
 
+## Test 1 : Azure Function direct
 
-<table>
+### Azure configuration
+EP3 = 840 ACU, 14GB Memory Dv2-Series.
+
+<table style="width:100%">
+  <tr>
+    <th>Config Id</th>
+    <th>Az FD</th>
+    <th>BackEnds</th>
+    <th>AzF Size</th>
+    <th>AzF Max instances</th>
+    <th>AzEH Tier</th>
+    <th>AzEH Scale</th>
+    <th>AzEH Hub Partitions</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>No</td>
+    <td>n/a</td>
+    <td>EP3</td>
+    <td>100</td>
+    <td>Standard</td>
+    <td>20</td>
+    <td>32</td>
+</tr>
+</table>
+
+### Test results:
+
+<table style="width=100%">
   <tr>
     <th>Test id</th>
     <th>Ramp-up</th>
@@ -180,7 +209,7 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
     <td>10000</td>
     <td>6.376057m<br>1<br>5.776255m (large discrepancy due to Azure Diagnostics missing a sample)</td>
             <td>9578</td>
-    <td>17</td>    <td></td>
+    <td>17</td>
     <td>250 Virtual Users x 40 Medium Instances</td>
   </tr>
   <tr>
@@ -195,10 +224,10 @@ Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the numb
   </tr>
 </table>
 
-(1) Fail/Sample = number of failed requests / sample. Request in unit and requests in millions.
 
-## Azure configuration
+## Test 2: Azure Function with Azure FrontDoor.
 
+### Azure Configuration:
 EP3 = 840 ACU, 14GB Memory Dv2-Series.
 
 <table style="width:100%">
@@ -213,16 +242,6 @@ EP3 = 840 ACU, 14GB Memory Dv2-Series.
     <th>AzEH Hub Partitions</th>
   </tr>
   <tr>
-    <td>1</td>
-    <td>No</td>
-    <td>n/a</td>
-    <td>EP3</td>
-    <td>100</td>
-    <td>Standard</td>
-    <td>20</td>
-    <td>32</td>
-</tr>
-  <tr>
     <td>2</td>
     <td>Yes</td>
     <td>2</td>
@@ -232,5 +251,69 @@ EP3 = 840 ACU, 14GB Memory Dv2-Series.
     <td>20</td>
     <td>32</td>
   </tr>
+</table>
 
+### Results:
+
+<table style="width=100%">
+  <tr>
+    <th>Test id</th>
+    <th>Ramp-up</th>
+    <th>Duration</th>
+    <th>Client/sec</th>
+    <th align="left">- Sample<br>- Fail<br>- EH msgs</th>
+    <th>Avg rps</th>
+    <th>AzFunc instances</th>
+    <th>Test Setup</th>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/23042021_43321/artifacts/dashboard/index.html">23/04/2021 16:33:21</a></td>
+    <td>60s</td>
+    <td>11 mins</td>
+    <td></td>
+    <td>6.299187m<br>171<br>6.299016</td>
+    <td>9465</td>
+    <td>17</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_100041/artifacts/dashboard/index.html">24/04/2021 10:00:41</a></td>
+    <td>60s</td>
+    <td>11 mins</td>
+    <td></td>
+    <td>6.265473m<br>151<br>6.265322m</td>
+    <td>9416</td>
+    <td>23</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_104426/artifacts/dashboard/index.html">24/04/2021 10:44:26 </a></td>
+    <td>30s</td>
+    <td>11 mins</td>
+    <td></td>
+    <td>6.455369m<br>126<br>6.455243m</td>
+    <td>9701</td>
+    <td>17</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_020919/artifacts/dashboard/index.html">24/04/2021 14:09:19</a></td>
+    <td>30s</td>
+    <td>11 mins</td>
+    <td></td>
+    <td>6.431543m<br>183<br>6.131467m (large discrepancy due to Azure Diagnostics missing a sample)</td>
+    <td>9669</td>
+    <td>24</td>
+    <td>250 Virtual Users x 40 Medium Instances</td>
+  </tr>
+  <tr>
+    <td><a target="_blank" href="https://sareportsloadtesting.blob.core.windows.net/testingreports/24042021_70352/artifacts/dashboard/index.html">24/04/2021 19:03:52</a></td>
+    <td>30s</td>
+    <td>11 mins</td>
+    <td></td>
+    <td>9.577939m<br>286<br>9.577655m</td>
+    <td>12789</td>
+    <td>32</td>
+    <td>250 Virtual Users x 60 Medium Instances</td>
+  </tr>
 </table>
