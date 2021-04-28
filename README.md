@@ -1,13 +1,13 @@
 # Azure PaaS elasticity load testing
 
-This article reports on a load testing plan to measure the elasticity of Azure Functions Premium when put under heavy load with a fast ramp-up rate.
+This article reports on a load testing plan that has been executed to measure the elasticity of Azure Functions Premium when put under heavy load with a fast ramp-up activity.
 
 Use case:
 This use case is based on a real life scenario in the media industry. A web hosted platform that must be able to accept a high volume of HTTP Get requests and be able to scale very rapidly. Traffic originating from consumers' devices and web browsers.
 
-The test aim to find out how quickly can Azure Function Premium scale without losing any requests (100% http-200 response)
+The test aims to find out how quickly Azure Function Premium scales and measure transient faults.
 
-Tested scenario: scale from 0 to 10 000 http requests per second (10K rps)
+Tested scenario: scale from 0 to 10 000 HTTPS requests per second (10K rps)
 
 Changing parameter: duration for the 0 to 10K rps ramp-up. This defines the number of new requests per second the Azure Function can receive. We try to capture the point at which the number of errors becomes un-acceptable on a usability point of view. Ramp-up over 2 mins, 1 min, 30 seconds, 20 seconds etc.
 
