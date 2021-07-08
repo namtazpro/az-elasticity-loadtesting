@@ -1,0 +1,8 @@
+version: v0.1
+testName: funehloadtest
+testPlan: loadtesting/azureloadtest/funehloadtest.jmx
+configurationFiles:
+    - 'loadtesting/azureloadtest/funehloadtestvro5.csv'
+description: 'funehloadtest Test Run'
+engineInstances: 20
+engineSize: S
